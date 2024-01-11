@@ -22,7 +22,7 @@ function SignUp() {
     // Add form validation logic here if needed
 
     try {
-      const response = await fetch('http://api.positivemindcarequicktest.com/signup', {
+      const response = await fetch('https://api.positivemindcarequicktest.com/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
