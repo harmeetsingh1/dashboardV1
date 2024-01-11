@@ -57,7 +57,7 @@ function LeadWindow() {
 
   const fetchUserNames = async () => {
     try {
-      const response = await fetch("http://api.positivemindcarequicktest.com/user-names");
+      const response = await fetch("https://api.positivemindcarequicktest.com/user-names");
       const result = await response.json();
 
       if (response.ok) {
@@ -110,7 +110,7 @@ function LeadWindow() {
 
   const fetchLeads = async () => {
     try {
-      const response = await fetch("http://api.positivemindcarequicktest.com/leads");
+      const response = await fetch("https://api.positivemindcarequicktest.com/leads");
       const result = await response.json();
 
       console.log("Response:", response);
@@ -255,7 +255,7 @@ function LeadWindow() {
 
       console.log("Updated Leads:", updatedLeads);
 
-      const response = await fetch("http://api.positivemindcarequicktest.com/update-leads", {
+      const response = await fetch("https://api.positivemindcarequicktest.com/update-leads", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
