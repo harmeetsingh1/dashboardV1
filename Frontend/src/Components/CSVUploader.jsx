@@ -25,7 +25,7 @@ const CSVUploader = () => {
       const formData = new FormData();
       formData.append("file", file);
 
-      const response = await fetch("http://api.positivemindcarequicktest.com/upload", {
+      const response = await fetch("https://api.positivemindcarequicktest.com/upload", {
         method: "POST",
         body: formData,
       });
