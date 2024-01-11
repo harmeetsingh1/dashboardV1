@@ -7,7 +7,7 @@ function Users() {
   // Function to fetch user information
   const fetchUsers = async () => {
     try {
-      const response = await fetch('http://api.positivemindcarequicktest.com/users');
+      const response = await fetch('https://api.positivemindcarequicktest.com/users');
       if (response.ok) {
         const { users } = await response.json();
         setUsers(users);
