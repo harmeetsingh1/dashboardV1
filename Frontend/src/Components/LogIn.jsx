@@ -9,7 +9,7 @@ function LogIn() {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch('http://api.positivemindcarequicktest.com/login', {
+      const response = await fetch('https://api.positivemindcarequicktest.com/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
